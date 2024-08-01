@@ -9,16 +9,11 @@ public class Spawn_Script : MonoBehaviour
     [Header("Game State")]
     private bool isGameContinues = true; 
     
-    private Collider spawnRegion; 
-    private System.Random random;
+    private Collider spawnRegion;
     private Coroutine spawnerCoroutine;
 
     [Header("Fruit Prefab Array")]
     public GameObject[] fruitPrefabs; 
-
-    [Header("Spawn Time Settings")]
-    public float minSpawnTime = 0.5f;
-    public float maxSpawnTime = 1f;
 
     [Header("Despawn Settings")]
     public float despawnTime = 6f;
@@ -34,8 +29,6 @@ public class Spawn_Script : MonoBehaviour
     [Header("Spawn Delay Settings")]
     public float minSpawnDelay = 0.5f;
     public float maxSpawnDelay = 1.5f;
-
-
 
     private void Awake()
     {
